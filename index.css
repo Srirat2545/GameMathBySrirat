@@ -1,0 +1,139 @@
+/* สไตล์ทั่วไปสำหรับหน้าเว็บ */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+    text-align: right;
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#score {
+    font-size: 24px;
+}
+
+.question {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input-number {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.equal {
+    font-size: 24px;
+}
+
+.operator {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.operator label {
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.operator input:checked + label {
+    color: #007bff;
+}
+
+.input-number {
+    width: 200px; 
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+#radioText {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.operator-text {
+    display: inline; 
+}
+#answerButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block; 
+    margin: 20px auto 0; 
+}
+
+#resultText {
+    font-size: 24px;
+    text-align: center; 
+}
+
+
+/* Responsive CSS สำหรับมือถือ */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left, .right {
+        flex: none;
+        text-align: center;
+    }
+
+    .input-number {
+        width: auto;
+    }
+
+    
+    .question, .equal, .operator-text, #userAnswer, .radioText {
+        display: block;
+    }
+
+    #userAnswer {
+        margin: 0 auto;
+    }
+}
+
